@@ -21,19 +21,19 @@ using System.Diagnostics;
 
 namespace Be.Stateless.Diagnostics
 {
-	internal static class EventLog
+	public static class EventLog
 	{
-		internal static void WriteError(string message)
+		public static void WriteError(string message)
 		{
 			WriteEntry(message, EventLogEntryType.Error);
 		}
 
-		internal static void WriteInformation(string message)
+		public static void WriteInformation(string message)
 		{
 			WriteEntry(message, EventLogEntryType.Information);
 		}
 
-		internal static void WriteWarning(string message)
+		public static void WriteWarning(string message)
 		{
 			WriteEntry(message, EventLogEntryType.Warning);
 		}
