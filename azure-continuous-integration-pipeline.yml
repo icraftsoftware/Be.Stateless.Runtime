@@ -1,5 +1,6 @@
-trigger:
+﻿trigger:
   - master
+  - dev/*
 
 resources:
   repositories:
@@ -12,4 +13,4 @@ extends:
   template: Pipelines/net/continuous-integration.yml@pipelineTemplateRepository
   parameters:
     Major: 2
-    Minor: 0
+    Minor: 1
